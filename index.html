@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TravelBloom</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="travel_recommendation.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search destinations..."
+      />
+      <button onclick="searchDestinations()">Search</button>
+      <button onclick="clearResults()">Clear</button>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="home">
+      <h1>Welcome to TravelBloom 🌍</h1>
+      <p>
+        Your gateway to discovering the best beaches, temples, and destinations
+        worldwide.
+      </p>
+
+      <!-- Social Media Icons -->
+      <div class="social-icons">
+        <a href="#"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+            alt="Facebook"
+        /></a>
+        <a href="#"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/128/733/733579.png"
+            alt="Twitter"
+        /></a>
+        <a href="#"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/733/733558.png"
+            alt="Instagram"
+        /></a>
+      </div>
+
+      <!-- Results Section -->
+      <section id="results" class="results"></section>
+    </section>
+
+    <script src="./travel_recommendation.js"></script>
+  </body>
+</html>

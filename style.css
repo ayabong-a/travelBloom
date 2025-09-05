@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") no-repeat center center/cover;
+    background-attachment: fixed;
+    /* parallax effect */
+    color: #fff;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #0077b6, #00b4d8);
+    padding: 1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
+}
+
+.navbar a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+}
+
+.navbar input {
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    width: 200px;
+}
+
+.navbar button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    background: #023e8a;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.navbar button:hover {
+    background: #03045e;
+}
+
+/* Home section */
+.home {
+    text-align: center;
+    padding: 5rem 2rem;
+    color: white;
+    min-height: 90vh;
+}
+
+.home .results {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.home h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.home p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* Social media icons */
+.social-icons {
+    margin-top: 2rem;
+}
+
+.social-icons a img {
+    width: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+/* Results section */
+.results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* Result cards */
+.card {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    color: #333;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.2rem;
+    text-align: center;
+}
+
+.card-content h2 {
+    color: #0077b6;
+    margin-bottom: 0.3rem;
+}
+
+.card-content h4 {
+    color: #555;
+    font-weight: normal;
+    margin-bottom: 0.8rem;
+}
+
+.card-content p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+
+/* About & Contact pages */
+.about,
+.contact {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    color: #fff;
+}
+
+.about h1,
+.contact h1 {
+    color: #0077b6;
+    margin-bottom: 1rem;
+}
+
+.about ul {
+    margin-top: 1rem;
+    list-style: square;
+    padding-left: 1.5rem;
+}
+
+/* Contact form */
+form input,
+form textarea {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+form button {
+    background: #00b4d8;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #0077b6;
+}
+
+.visit-btn {
+    margin-top: 10px;
+    padding: 0.5rem 1rem;
+    background: #00b4d8;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.visit-btn:hover {
+    background: #0077b6;
+    transform: scale(1.05);
+}
